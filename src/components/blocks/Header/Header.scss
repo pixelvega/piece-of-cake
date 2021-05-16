@@ -1,0 +1,48 @@
+.Header {
+  background: rgb(0,0,0);
+  background: rgb(46,46,46);
+  background: -moz-linear-gradient(90deg, rgba(46,46,46,1) 0%, rgba(165,151,98,1) 49%, rgba(165,151,98,1) 50%, rgba(165,151,98,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(46,46,46,1) 0%, rgba(165,151,98,1) 49%, rgba(165,151,98,1) 50%, rgba(165,151,98,1) 100%);
+  background: linear-gradient(90deg, rgba(46,46,46,1) 0%, rgba(165,151,98,1) 49%, rgba(165,151,98,1) 50%, rgba(165,151,98,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2e2e2e",endColorstr="#a59762",GradientType=1);
+  .logo {
+    height: 40px;
+    padding: 8px 16px;
+    border: 1px solid rgba(165,151,98,1);
+    font-weight: 300;
+    color: rgba(165,151,98,1);
+  }
+  nav {
+    padding: 24px 16px;
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      li:first-child {
+        justify-self: flex-start;
+        margin-right: auto;
+      }
+      .link-text {
+        min-height: 100%;
+        &:hover {
+          a {
+            font-weight: 500;
+          }
+        }
+        a {
+          text-shadow: 0px 0px 2px #FFFFFF;
+          color: white;
+          text-transform: uppercase;
+          &:visited {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+}
